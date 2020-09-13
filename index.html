@@ -1,154 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ilche's Portfolio</title>
 
     <script src="jquery/jquery.js"></script>
-    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css" />
     <script src="jquery/jquery-ui.min.js"></script>
     <script src="jquery/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="jquery/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="jquery/jquery-ui.structure.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body class="front-page">
-<nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light">
-    <div class="container-fluid">
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="front-page">
+    <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light">
+      <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">I.S</a>
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">I.S</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class=""><a href="#header">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#">CONTACT ME</a></li>
-            </ul>
-
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#">CONTACT ME</a></li>
+          </ul>
         </div>
-    </div>
-</nav>
-<div class="container-fluid">
-   <section class="header-image" id="header">
-       <img src="img/laptop-desk.jpg">
-       <div class="header-text">
-              <h1>Ilche Spaseski</h1>
-              <h1>Web designer and Web developer</h1>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <section class="header-image" id="header">
+        <img src="img/desk.jpg" />
+        <div class="header-text">
+          <h1>Ilche Spaseski</h1>
+          <h1>Computer Science Student & Web Development Enthusiast</h1>
+          <div class="ui-widget-content"></div>
+          <span class="fa fa-envelope"> EMAIL</span>
+          <span class="fa fa-github">
+            <a href="https://github.com/ilchespaseski" target="_blank">
+              GITHUB
+            </a></span
+          >
+
+          <span class="fa fa-linkedin linkedin">
+            <a
+              href="https://www.linkedin.com/in/ilche-spaseski-9bb714185/?originalSubdomain=mk"
+              target="_blank"
+            >
+              LINKEDIN
+            </a></span
+          >
+        </div>
+      </section>
+      <div class="jumbotron" id="about">
+        <div class="row">
+          <div class="about-header">
+            <p class="text-center h1 about-header">About me</p>
           </div>
-   </section>
-        <div class="jumbotron" id="about">
-            <div class="about-header"><p class="text-center h1 about-header"> About me</p> </div>
-            <div class="ui-widget-content"></div>
-            <br>
-            <div class="about-content row">
-                <div class="col-sm-4 img-me"> <img src="img/me.jpg" class="img-circle img-responsive" alt="me"> </div>
+          <div class="ui-widget-content"></div>
+          <br />
+          <div class="about-content col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img
+              src="img/me.jpg"
+              class="img-circle img-responsive center"
+              alt="me"
+            />
 
-                <div class="col-sm-8 about-text"><p class="h2">Hi, i am Ilche Spaseski, a student at the Faculty of Computer Science.
-                <br>
+            <div class="about-text">
+              <p class="h2">
+                Hi, i am Ilche Spaseski, a student at the Faculty of Computer
+                Science.
+                <br />
                 I am 20 years old and i live in Prilep, i study in Skopje.
-                <br>
-                <br>
-                I want to learn new things, as i am currently focused on developing mobile applications, i have experience with developing websites. For more information about my skills Click here.
-                </p> </div>
+                <br />
+                <br />
+                I want to learn new things, as i am currently focused on
+                developing mobile applications, i have experience with
+                developing websites. For more information about my skills Click
+                here.
+              </p>
             </div>
-        </div>
-        <div class="jumbotron" id="skills">
-            <div class="text-center h1 skills-header">SKILLS </div>
-            <div class="ui-widget-content skills-line"></div>
-            <div class="web-development row">
-                <span class="h3 text-center text-sm-center"><h3 class="markup">Markup and programming languages</h3></span>
-                <div class="front-end text-left col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-                        <h3>Front-end languages</h3>
-                        <div class="ui-widget-content"></div>
-                       <ul>
-                           <li style="float:left; width: 15%;">HTML5</li>
-                           <li>
-                               <div class="progress">
-                                   <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                       80%
-                                   </div>
-                               </div>
-                           </li>
-                           <li style="float:left; width: 15%;">CSS</li>
-                           <li>
-                               <div class="progress">
-                                   <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                       60%
-                                   </div>
-                               </div>
-                           </li>
-                           <li style="float:left; width: 15%;"> Javascript </li>
-                           <li>
-                               <div class="progress">
-                                   <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                       40%
-                                   </div>
-                               </div>
-                           </li>
-                                   <li style="float:left; width: 15%;">Jquery</li>
-                               <li>
-                                   <div class="progress">
-                                       <div class="progress-bar" role="progressbar" aria-valuenow="50"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                           50%
-                                       </div>
-                                   </div>
-                               </li>
-                                   <li style="float:left; width: 15%;">Vue</li>
-                           <li>
-                               <div class="progress">
-                                   <div class="progress-bar" role="progressbar" aria-valuenow="0"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                                       0%
-                                   </div>
-                               </div>
-                           </li>
-
-                       </ul>
-                </div>
-                <div class="Back-end col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <h3>Back-end languages</h3>
-                    <div class="ui-widget-content"></div>
-                    <ul>
-                        <li style="float:left; width: 25%;">Javascript Express</li>
-                        <li>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0"
-                                     aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                                    0%
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
+          </div>
+          <div class="front-end col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <span class="h3 text-center text-sm-center"
+              ><h3 class="markup">Languages and Softwares</h3></span
+            >
+            <div class="ui-widget-content"></div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                HTML
+              </div>
             </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                CSS
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                sho
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                Bootstrap
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                Javascript
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                jQuery
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                Vue
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                Git
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                C
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                C++
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              >
+                MySQL
+              </div>
+            </div>
+          </div>
         </div>
-    <div class="jumbotron" id="projects">
+      </div>
+
+      <div class="jumbotron" id="projects">
         <div class="text-center h1">PROJECTS</div>
-        <div class="row project-icons">
-
-        </div>
+        <div class="row project-icons"></div>
+      </div>
     </div>
-
-
-</div>
-<script src="js.js"></script>
-</body>
+    <div class="jumbotron " id="contact-me">
+       
+    </div>
+    <script src="Vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </body>
 </html>

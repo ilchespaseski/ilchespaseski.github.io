@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Century Gothic, sans-serif;
 
 }
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -14,19 +16,31 @@ body {
 
 .navbar {
     margin-bottom: 0px;
+    background-color: #F8F8F8;
+    border-bottom: 0;
+}
+
+.navbar-nav > li > a:hover {
+    color: black !important;
+}
+
+.navbar-nav > li:hover {
+    background-color: #E7E7E7;
 }
 
 .navbar-brand {
-    margin-left: 30px;
+    margin-left: 10px !important;
     text-color: antiquewhite;
     font-family: Serif;
 }
 
-.header-image img{
+#myNavbar > ul > li:nth-child(5) {
+    margin-right: 20px;
+}
+
+.header-image img {
     max-width: 100%;
     height: auto;
-
-
 }
 
 .header-text {
@@ -35,13 +49,39 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:  whitesmoke;
+    color: whitesmoke;
     font-family: 'Alegreya Sans SC';
     font-size: 80px;
 
 }
-.header-text h1 {
-    font-size: 50px;
+
+.header-text > h1:first-child {
+    font-size: 75px;
+}
+
+.header-text h1:nth-child(2) {
+    font-size: 30px;
+}
+
+.header-text > span {
+    display: inline-block;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    height: 50px;
+    width: 120px;
+    padding-top: 13px;
+    border-radius: 5px;
+
+}
+
+.linkedin {
+    width: 140px !important;
+    padding-right: 5px;
+}
+
+.header-text > span a {
+    color: black;
 }
 
 .about-header {
@@ -52,81 +92,78 @@ body {
 }
 
 .about-content img {
-    width:200px;
+    width: 200px;
     height: 250px;
 }
+
 .about-text p {
     font-family: Century Gothic, sans-serif;
     padding-top: 20px;
     text-align: justify;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.progress > div:first-child {
+    font-size: 15px;
+}
+.about-content {
+    border-right: 2px solid rgb(185, 181, 181);
+}
+.progress-bar-success {
+    background-color: rgb(187, 187, 187) !important;
+}
 .jumbotron {
     margin-bottom: 0;
 }
-#skills {
-    background-image: linear-gradient(to right, #303030, #808080);
-    background-color: gradien #303030	!important;
-    color: white;
-    font-family: Century Gothic, sans-serif;
 
-}
-.skills-line {
-    margin-bottom: 30px;
-    margin-top: -10px;
-}
-.web-development {
-    border: 2px solid grey;
-    margin-top: 5px;
-}
-.markup {
- border-bottom: 3px solid grey;
+#projects {
+     background-color: #bbbbbb;
+     border-top: 4px solid #888888;
 }
 
-.front-end {
-    border-right: 2px solid grey;
-}
-.Back-end {
-    padding-left: 20px;
-}
-.front-end li{
-   list-style-type: none;
-    padding: 5px;
-
-}
-.Back-end li{
-    list-style-type: none;
-    padding: 5px;
-}
-.progress {
-    margin-bottom: 0;
-    width: 25%;
-}
 
 @media (max-width: 800px) {
     .header-text {
         text-align: center;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
     }
-    .header-text h1 {
-        font-size: 30px;
+
+    .header-text h1:first-child {
+        font-size: 35px;
     }
 
-    .img-me img{
+    .header-text h1:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .img-me img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-     .about-header p {
-         font-size: 35px !important;
-     }
+
+    .about-header p {
+        font-size: 35px !important;
+    }
+
     .about-text p {
         text-size: 15px;
     }
 
+    .header-text > span {
+        display: none;
 
+    }
+    .about-content {
+        border-right: 0;
+        border-bottom: 4px solid rgb(199, 199, 199)
+    }
     }
