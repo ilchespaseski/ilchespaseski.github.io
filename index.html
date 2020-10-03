@@ -21,10 +21,10 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/40cbe96dd2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="front-page">
@@ -41,47 +41,47 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">I.S</a>
+          <a class="navbar-brand" href="#">Ilche Spaseski</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class=""><a href="#header">HOME</a></li>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#">CONTACT ME</a></li>
+            <li class="">
+              <a class="js-scroll-trigger" href="#header">HOME</a>
+            </li>
+            <li>
+              <a class="nav-link js-scroll-trigger" href="#about">ABOUT ME</a>
+            </li>
+            <li>
+              <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
+            </li>
+            <li>
+              <a class="nav-link js-scroll-trigger" href="#projects"
+                >PROJECTS</a
+              >
+            </li>
+            <li>
+              <a class="nav-linkjs-scroll-trigger" href="#">CONTACT ME</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container-fluid">
       <section class="header-image" id="header">
-        <img src="img/desk.jpg" />
+        <div class="bgimg"></div>
         <div class="header-text">
           <h1>Ilche Spaseski</h1>
           <h1>Computer Science Student & Web Development Enthusiast</h1>
           <div class="ui-widget-content"></div>
-          <span class="fa fa-envelope"> EMAIL</span>
-          <span class="fa fa-github">
-            <a href="https://github.com/ilchespaseski" target="_blank">
-              GITHUB
-            </a></span
-          >
-
-          <span class="fa fa-linkedin linkedin">
-            <a
-              href="https://www.linkedin.com/in/ilche-spaseski-9bb714185/?originalSubdomain=mk"
-              target="_blank"
-            >
-              LINKEDIN
-            </a></span
-          >
+          <button class="fa fa-envelope">EMAIL</button>
+          <button class="fa fa-github">GITHUB</button>
+          <button class="fa fa-linkedin linkedin">LINKEDIN</button>
         </div>
       </section>
-      <div class="jumbotron" id="about">
+      <div class="jumbotron jumbo1" id="about">
         <div class="row">
           <div class="about-header">
-            <p class="text-center h1 about-header">About me</p>
+            <p class="text-center h2 about-header">ABOUT ME</p>
           </div>
           <div class="ui-widget-content"></div>
           <br />
@@ -107,132 +107,22 @@
               </p>
             </div>
           </div>
-          <div class="front-end col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="skills col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <span class="h3 text-center text-sm-center"
               ><h3 class="markup">Languages and Softwares</h3></span
             >
             <div class="ui-widget-content"></div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                HTML
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                CSS
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                sho
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                Bootstrap
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                Javascript
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                jQuery
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                Vue
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                Git
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                C
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                C++
-              </div>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 100%"
-              >
-                MySQL
-              </div>
-            </div>
+            <i class="fa fa-html5 fa-10x"></i>
+            <i class="fa fa-css3 fa-10x"></i>
+            <i class="fab fa-bootstrap fa-10x"></i>
+            <i class="fab fa-js-square fa-10x"></i>
+            <i class="fab fa-vuejs fa-10x"></i>
+            <i class="fab fa-npm fa-10x"></i>
+            <i class="fab fa-git fa-10x"></i>
+            <i class="fab fa-linux fa-10x"></i>
+            <li class="list-inline-item"><small>jQuery</small></li>
+            <li class="list-inline-item"><small>Express.js</small></li>
+            <li class="list-inline-item"><small>MySQL</small></li>
           </div>
         </div>
       </div>
@@ -242,9 +132,7 @@
         <div class="row project-icons"></div>
       </div>
     </div>
-    <div class="jumbotron " id="contact-me">
-       
-    </div>
+    <div class="jumbotron" id="contact-me"></div>
     <script src="Vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </body>
