@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body, html {
+body,
+html {
   height: 100%;
 }
 body {
@@ -41,7 +42,7 @@ body {
   margin-right: 20px;
 }
 
-.bgimg{
+.bgimg {
   background-image: url("img/desk.jpg");
   height: 100vh;
   background-position: center;
@@ -87,7 +88,6 @@ body {
   color: black;
 }
 
-
 .about-header {
   font-family: Century Gothic, sans-serif;
   margin: 0;
@@ -120,19 +120,25 @@ body {
 .progress-bar-success {
   background-color: rgb(187, 187, 187) !important;
 }
+.skills > li {
+  display: inline;
+  font-size: 70px;
+  margin-left: 10px;
+}
+.skills > i {
+  margin-left: 20px !important;
+}
 
 .jumbotron {
   margin-bottom: 0;
 }
 
 #projects {
-  background-color: #bbbbbb;
-  border-top: 4px solid #888888;
+  border-top: 5px solid #888888;
+  border-radius: 20px;
 }
 
 @media (max-width: 800px) {
- 
-
   .img-me img {
     display: block;
     margin-left: auto;
