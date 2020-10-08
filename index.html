@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ilche's Portfolio</title>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding"> 
+   <title>Ilche's Portfolio</title>
 
     <script src="jquery/jquery.js"></script>
     <link rel="stylesheet" href="jquery/jquery-ui.min.css" />
@@ -25,51 +26,54 @@
       src="https://kit.fontawesome.com/40cbe96dd2.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="front-page">
-    <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Ilche Spaseski</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="">
-              <a class="js-scroll-trigger" href="#header">HOME</a>
-            </li>
-            <li>
-              <a class="nav-link js-scroll-trigger" href="#about">ABOUT ME</a>
-            </li>
-            <li>
-              <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
-            </li>
-            <li>
-              <a class="nav-link js-scroll-trigger" href="#projects"
-                >PROJECTS</a
-              >
-            </li>
-            <li>
-              <a class="nav-linkjs-scroll-trigger" href="#">CONTACT ME</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container-fluid">
+  <body class="front-page" id='body'>
+
+    <div class="container-fluid" id='container-fluid'>
       <section class="header-image" id="header">
-        <div class="bgimg"></div>
-        <div class="header-text">
+        <div class="bgimg">
+          <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light" id='navbar'>
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#myNavbar"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Ilche Spaseski</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="">
+                    <a class="js-scroll-trigger" href="#header">HOME</a>
+                  </li>
+                  <li>
+                    <a class="nav-link js-scroll-trigger" href="#about">ABOUT ME</a>
+                  </li>
+                  <li>
+                    <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
+                  </li>
+                  <li>
+                    <a class="nav-link js-scroll-trigger" href="#projects"
+                      >PROJECTS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-linkjs-scroll-trigger" href="#">CONTACT ME</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="header-text" id="header-text">
           <h1>Ilche Spaseski</h1>
           <h1>Computer Science Student & Web Development Enthusiast</h1>
           <div class="ui-widget-content"></div>
@@ -133,7 +137,7 @@
       </div>
     </div>
     <div class="jumbotron" id="contact-me"></div>
-    <script src="Vue.js"></script>
+    <script src="javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </body>
 </html>
