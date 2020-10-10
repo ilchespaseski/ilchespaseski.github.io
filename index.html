@@ -1,143 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding"> 
-   <title>Ilche's Portfolio</title>
 
-    <script src="jquery/jquery.js"></script>
-    <link rel="stylesheet" href="jquery/jquery-ui.min.css" />
-    <script src="jquery/jquery-ui.min.js"></script>
-    <script src="jquery/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css" />
-    <link rel="stylesheet" href="jquery/jquery-ui.structure.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/40cbe96dd2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="front-page" id='body'>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Ilche's Portfolio</title>
+  <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/40cbe96dd2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
 
-    <div class="container-fluid" id='container-fluid'>
-      <section class="header-image" id="header">
-        <div class="bgimg">
-          <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light" id='navbar'>
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button
-                  type="button"
-                  class="navbar-toggle"
-                  data-toggle="collapse"
-                  data-target="#myNavbar"
-                >
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Ilche Spaseski</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="">
-                    <a class="js-scroll-trigger" href="#header">HOME</a>
-                  </li>
-                  <li>
-                    <a class="nav-link js-scroll-trigger" href="#about">ABOUT ME</a>
-                  </li>
-                  <li>
-                    <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
-                  </li>
-                  <li>
-                    <a class="nav-link js-scroll-trigger" href="#projects"
-                      >PROJECTS</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-linkjs-scroll-trigger" href="#">CONTACT ME</a>
-                  </li>
-                </ul>
-              </div>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id='body'>
+
+  <div class="container-fluid" id='container-fluid'>
+    <section class="header-image" id="header">
+      <div class="bgimg">
+        <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light" id='navbar'>
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Ilche Spaseski</a>
             </div>
-          </nav>
-        </div>
-        <div class="header-text" id="header-text">
-          <h1>Ilche Spaseski</h1>
-          <h1>Computer Science Student & Web Development Enthusiast</h1>
-          <div class="ui-widget-content"></div>
-          <button class="fa fa-envelope">EMAIL</button>
-          <button class="fa fa-github">GITHUB</button>
-          <button class="fa fa-linkedin linkedin">LINKEDIN</button>
-        </div>
-      </section>
-      <div class="jumbotron jumbo" id="about">
-        <div class="row">
-          <span class="about-header">
-            <p class="text-center h2 about-header">ABOUT ME</p>
-          </span>
-          <div class="ui-widget-content"></div>
-          <br />
-          <div class="about-content col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <img
-              src="img/me.jpg"
-              class="img-circle img-responsive center"
-              alt="me"
-            />
-
-            <div class="about-text">
-              <p class="h2">
-                Hi, i am Ilche Spaseski, a student at the Faculty of Computer
-                Science.
-                <br />
-                I am 20 years old and i live in Prilep, i study in Skopje.
-                <br />
-                <br />
-                I want to learn new things, as i am currently focused on
-                developing mobile applications, i have experience with
-                developing websites. For more information about my skills Click
-                here.
-              </p>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a class="js-scroll-trigger" href="#header">HOME</a>
+                </li>
+                <li>
+                  <a class="nav-link js-scroll-trigger" href="#about">ABOUT ME</a>
+                </li>
+                <li>
+                  <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
+                </li>
+                <li>
+                  <a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a>
+                </li>
+                <li>
+                  <a class="nav-linkjs-scroll-trigger" href="#">INTERESTS</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="skills col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <span class="h3 text-center text-sm-center"
-              ><h3 class="markup">Languages and Softwares</h3></span
-            >
-            <div class="ui-widget-content"></div>
-            <i class="fa b fa-html5 fa-8x"></i>
-            <i class="fa fa-css3 fa-8x"></i>
-            <i class="fab fa-bootstrap fa-8x"></i>
-            <i class="fab fa-js-square fa-8x"></i>
-            <i class="fab fa-vuejs fa-8x"></i>
-            <i class="fab fa-npm fa-8x"></i>
-            <i class="fab fa-git fa-8x"></i>
-            <i class="fab fa-linux fa-8x"></i>
-            <li class="list-inline-item"><small>jQuery</small></li>
-            <li class="list-inline-item"><small>Express.js</small></li>
-            <li class="list-inline-item"><small>MySQL</small></li>
-          </div>
-        </div>
+        </nav>
+      </div>
+      <div class="header-text" id="header-text">
+        <h1>Ilche Spaseski</h1>
+        <h1>Computer Science Student & Web Development Enthusiast</h1>
+        <div class="ui-widget-content"></div>
+        <button class="fa fa-envelope">EMAIL</button>
+        <button class="fa fa-github">GITHUB</button>
+        <button class="fa fa-linkedin linkedin">LINKEDIN</button>
       </div>
 
-      <div class="jumbotron" id="projects">
-        <div class="text-center h1">PROJECTS</div>
-        <div class="row project-icons"></div>
+    </section>
+
+    <div class="jumbotron jumbo" id="about">
+      <div class="about-me text-left">
+        <span class="mb-5 h2" id='app'>
+          ABOUT ME
+        </span>
+        <div class="ui-widget-content"></div>
+        <br />
+        <div class="about-content row ">
+          <div class='img-me col-lg-3 col-md-3 col-sm-3 col-xs-12'> <img src="img/me.jpg"
+              class="img-me img-fluid img-profile rounded-circle mx-auto mb-2" alt="Avatar" />
+          </div>
+
+          <div class="about-text col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <p class="h2">
+              Hi, i am Ilche Spaseski, a student at the Faculty of Computer
+              Science.
+              I am 20 years old and i live in Prilep, i study in Skopje.
+              I want to learn new things, as i am currently focused on
+              developing mobile applications, i have experience with
+              developing websites. For more information about my skills Click
+              here.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="jumbotron" id="contact-me"></div>
-    <script src="javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  </body>
+
+    <div class="ui-widget-content"></div>
+
+
+    <div class="jumbotron" id="skills">
+      <div class="skills-section">
+        <h2 class="mb-5 h2">SKILLS</h2>
+        <br>
+        <br>
+        <div class='subheading'>Programming and Scripting Languages & Tools & Frameworks</div>
+        <i class="fa b fa-html5 fa-5x"></i>
+        <i class="fa fa-css3 fa-5x"></i>
+        <i class="fab fa-bootstrap fa-5x"></i>
+        <i class="fab fa-js-square fa-5x"></i>
+        <i class="fab fa-vuejs fa-5x"></i>
+        <i class="fab fa-npm fa-5x"></i>
+        <i class="fab fa-git fa-5x"></i>
+        <i class="fab fa-linux fa-5x"></i>
+        <li class="list-inline-item"><small>jQuery</small></li>
+        <li class="list-inline-item"><small>Express.js</small></li>
+        <li class="list-inline-item"><small>MySQL</small></li>
+      </div>
+    </div>
+    <div class="ui-widget-content"></div>
+
+    <div class="jumbotron education" id='education'>
+      <div class="centered">
+        <div>
+          <h2 class="mb-5">EDUCATION</h2>
+          <div class="ui-widget-content"></div>
+        </div>
+        <div class="mb-5   ">
+          <div>
+            <h2 class="">Faculty of Computer Science and Engineering</h2>
+            <div>Bachelor of Science and Engineering</div>
+            <div class="text-left start-date ">October 2018 - Present</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui-widget-content"></div>
+
+    <div class='jumbotron' id='interests'>
+      <div class='centered'>
+        <div class="interests-header">
+        <h2 class='mb-5 '>INTERESTS</h2>
+        <div class="ui-widget-content"></div>
+        </div>
+        <div class='interests-text'>
+          <p>
+            Hi, i am Ilche Spaseski, a student at the Faculty of Computer
+            Science.
+            I am 20 years old and i live in Prilep, i study in Skopje.
+            I want to learn new things, as i am currently focused on
+            developing mobile applications, i have experience with
+            developing websites. For more information about my skills Click
+            here.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</body>
+
 </html>
