@@ -5,7 +5,8 @@
 - [x] About me section
 - [x] Skills section 
 - [ ] Projects
-- [ ] Footer section with contact me
+- [x] EDUCATION
+- [x] Interests
 
 ### Functionality 
 
