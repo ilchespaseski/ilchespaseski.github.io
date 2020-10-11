@@ -143,15 +143,15 @@ body {
 
 .about-text {
   text-align: justify;
-  font-size: 50px !important;
   color: #6c757d !important;
   line-height: 1.5 !important;
+  
 
 }
 
 .about-text p {
   font-weight: 300;
-  font-size: 23px;
+  font-size: 22px;
   padding-top: 20px;
 
 }
@@ -241,7 +241,7 @@ color: #6c757d;
 }
 .interests-text p{
   font-weight: 300;
-  font-size: 20px;
+  font-size: 22px;
   color: #6c757d;
 }
 @media (max-width: 800px) {
