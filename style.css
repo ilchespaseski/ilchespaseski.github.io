@@ -43,10 +43,13 @@ body {
   border-bottom: 0;
 }
 
-.navbar-nav>li>a:hover {
+.navbar-nav>li:hover {
   color: black !important;
-  background-color: #e7e7e7;
+  background-color:rgb(197, 197, 197);
 
+}
+.navbar-nav > li > a:hover {
+  opacity: 1;
 }
 
 
@@ -67,7 +70,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+#header {
+  position:relative;
+}
 .header-text {
   text-align: center;
   position: absolute;
@@ -75,16 +80,27 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: whitesmoke;
-  font-family: "Alegreya Sans SC";
   font-size: 80px;
+  border-top: 2px solid white;
+  opacity: 0;
+  
+
 }
 
 .header-text>h1:first-child {
-  font-size: 75px;
+  font-size: 135px;
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  color:#FFFAF0;
+  letter-spacing: 7px;
 }
 
 .header-text h1:nth-child(2) {
   font-size: 30px;
+  font-family: 'Staatliches', cursive;
+  color: #FFFAF0;
+  letter-spacing: 2px;
+
 }
 
 .header-text>button {
@@ -100,8 +116,18 @@ body {
 .linkedin {
   width: 140px !important;
   padding-right: 5px;
+  background-color: #333333;
 }
 
+.header-text > .fa-envelope{
+  color: #333333;
+  font-weight: 550;
+  
+}
+.header-text > .fa{
+  color: #333333;
+  font-size: 18px;
+}
 .jumbo {
   height: 100vh;
   display: table-cell;
@@ -118,15 +144,6 @@ body {
   color: black;
 }
 
-.mb-5 {
-  font-size: 35px !important;
-  color: #333333;
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #343a40;
-}
 
 .about-content {
   padding-top: 50px;
@@ -136,7 +153,7 @@ body {
 
 .about-content img {
   width: 200px;
-  height: 200px;
+  height: 210px;
   border-radius: 50%;
   border: 6px solid #42aac4;;
 }
@@ -145,7 +162,7 @@ body {
   text-align: justify;
   color: #6c757d !important;
   line-height: 1.5 !important;
-  
+  font-family: 'Raleway', sans-serif;
 
 }
 
@@ -243,7 +260,29 @@ color: #6c757d;
   font-weight: 300;
   font-size: 22px;
   color: #6c757d;
+  font-family: 'Raleway', sans-serif;
 }
+.mb-5 {
+  font-size: 45px !important;
+  color: #333333;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  text-decoration: underline;
+}
+.mb-6 {
+  font-size: 45px !important;
+  color: #333333;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  
+}
+
 @media (max-width: 800px) {
   .img-me img {
     display: block;
@@ -256,12 +295,13 @@ color: #6c757d;
     display: block;
   }
 
-  .about-text p {
-    font-size: 25px;
-  }
+ 
 
   .interests-text {
     width: 90%;
+  }
+  .header-text h1:first-child {
+    font-size: 100px;
   }
 }
 
