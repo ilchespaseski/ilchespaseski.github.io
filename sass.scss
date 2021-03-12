@@ -1,0 +1,175 @@
+$yellow: #F9A826;
+$head-font: "Yu Gothic UI";
+
+
+@mixin full-screen() {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    position: relative;
+}
+
+@mixin  pasus() {
+    text-align: justify;
+    color: #6c757d !important;
+    line-height: 1.5 !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin naslov-section {
+        font-size: 45px !important;
+        color: #333333;
+        display: block;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #343a40;
+        text-decoration: underline;
+      
+    
+}
+.main-section {
+  @include full-screen();
+    
+        .header-text {
+            h1 {
+            font-size: 50px !important;
+            color: #333333 !important;
+            font-weight: bold;
+            }
+            h2 {
+                font-size: 25px !important; 
+                font-family: $head-font;
+            }
+        
+        }
+}
+.name {
+    color: $yellow;
+   font: $head-font;
+}
+.jumbotron {
+    margin: 0px !important;
+}
+.jumbo {
+   @include full-screen();
+  
+   background-color: white;
+   
+        .header-text>button a {
+            color: black;
+        }
+     
+        .about-content img {
+            width: 200px;
+            height: 210px;
+            border-radius: 50%;
+            border: 6px solid #42aac4;;
+        }
+       .img-me {
+           margin-left: 30px;
+       }
+        .about-text {
+            @include pasus();
+            margin-top: 15px;
+        }
+        
+        .about-text p {
+            font-weight: 300;
+            font-size: 22px;
+            padding-top: 20px;
+        
+        }
+}
+
+#skills {
+  height: 100vh !important;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.skills-section {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem !important;
+  color: #6c757d;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.skills-section>li {
+  display: inline;
+  font-size: 50px;
+  margin-right: 30px;
+}
+
+.skills-section>i {
+  margin-right: 30px !important;
+  text-align: left;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+
+.education {
+  height: 100vh;
+  position: relative;
+
+}
+.mb-4 {
+  text-transform: uppercase;
+font-weight: 600;
+font-size: 18px;
+color: #6c757d;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.centered div:first-child {
+  padding-bottom: 30px;
+}
+
+.start-date {
+  font-size: 18px !important;
+  margin-top: 10px !important;
+  color: #bd5d38 !important;
+  font-weight: 500 !important;
+  text-align: left;
+}
+
+#interests {
+ @include full-screen()
+}
+
+.interests-header{
+    padding-bottom: 50px;
+
+}
+.interests-text {
+  padding-top: 20px;
+  width: 80%;
+  text-align: justify;
+}
+.interests-text p{
+  font-weight: 300;
+  font-size: 22px;
+  color: #6c757d;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mb-5 {
+    @include naslov-section();
+}

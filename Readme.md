@@ -4,7 +4,7 @@
 - [x] Creating header
 - [x] About me section
 - [x] Skills section 
-- [ ] Projects
+- [ ] Projects 
 - [x] EDUCATION
 - [x] Interests
 

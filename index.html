@@ -6,209 +6,142 @@
   <meta content="utf-8" http-equiv="encoding">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Ilche's Portfolio</title>
-  <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/40cbe96dd2.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="sass.css" />
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">ILCHE SPASESKI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<body id='body'>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">SKILLS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">EDUCATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#interests">INTERESTS</a>
+      </li>
+    </ul>
 
-  <div class="container-fluid" id='container-fluid'>
-    <section class='jumbotron header'>
-      <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light" id='navbar'>
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">ILCHE SPASESKI</a>
+  </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row main-section align-items-center" id="home">
+        <div class="col-12 col-lg-6 col-md-6"><img src=img/coder.png class="img-fluid"/> </div>
+        <div class='header-text col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+            <h1>Hi, I am <span class='name'>Ilche Spaseski<span> </h1>
+            <h2>Computer Science Student and <br>
+              Web Development enthusiast</h2>
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="">
-                <a class="js-scroll-trigger" href="#header">HOME</a>
-              </li>
-              <li>
-                <a href="#about">ABOUT ME</a>
-              </li>
-              <li>
-                <a href="#skills">SKILLS</a>
-              </li>
-              <li>
-                <a href="#education">EDUCATION</a>
-              </li>
-              <li>
-                <a href="#interests">INTERESTS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="header-content row">
-        <div class='header-text centered col-lg-6 col-md-4 col-sm-6 col-xs-6'>
-          <h1>Hi, I am <span class='name'>Ilche Spaseski<span> </h1>
-          <h2>Computer Science Student and <br>
-            Web Development enthusiast</h2>
-        </div>
-       <img class='header-photo img-responsive col-lg-6  col-md-6 col-sm-4 col-xs-6' src='img/coder.svg '>
-      </div> 
-    </section>
-    <!--<section class="header-image" id="header">
-      <div class="bgimg">
-        <nav class="navbar position-fixed navbar-inverse navbar-fixed-top bg-light" id='navbar'>
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Ilche Spaseski</a>
+    </div>
+
+
+    <div class="jumbotron jumbo align-items-center row" id="about-me">
+        <h2 class="mb-5">ABOUT ME</h2>
+
+          <br />
+          <div class="about-content row">
+            <div class='img-me col-lg-3 col-md-3 col-sm-3 col-xs-12'> <img src="img/me.jpg"
+                class="img-me img-fluid img-profile rounded-circle mx-auto mb-2" alt="Avatar" loading="lazy" />
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="">
-                  <a class="js-scroll-trigger" href="#header">HOME</a>
-                </li>
-                <li>
-                  <a  href="#about">ABOUT ME</a>
-                </li>
-                <li>
-                  <a  href="#skills">SKILLS</a>
-                </li>
-                <li>
-                  <a  href="#education">EDUCATION</a>
-                </li>
-                <li>
-                  <a href="#interests">INTERESTS</a>
-                </li>
-              </ul>
+  
+            <div class="about-text col-lg-7 col-md-8 col-sm-8 col-xs-12 align-items-center">
+              <p class="h2">
+                Hi, I'm Ilche Spaseski, a student at the Faculty of Computer
+                Science.
+                <br>
+                I spend my days with my hands in many different areas of web development from back end programming to
+                front end engineering, user experience and visual design.
+                Love to learn new things such as a new programming languages and frameworks to improve my skills.
+              </p>
             </div>
           </div>
-        </nav>
+      </div>
+
+      <div class="jumbotron jumbo align-items-center" id="skills">
+        <div class="skills-section">
+          <h2 class="mb-5">SKILLS</h2>
+  
+          <br>
+          <br>
+          <div class='subheading'>Programming and Scripting Languages & Tools & Frameworks</div>
+          <i class="fa b fa-html5 fa-5x"></i>
+          <i class="fa fa-css3 fa-5x"></i>
+          <i class="fab fa-bootstrap fa-5x"></i>
+          <i class="fab fa-js-square fa-5x"></i>
+          <i class="fab fa-vuejs fa-5x"></i>
+          <i class="fab fa-npm fa-5x"></i>
+          <i class="fab fa-git fa-5x"></i>
+          <i class="fab fa-linux fa-5x"></i>
+          <li class="list-inline-item"><small>jQuery</small></li>
+          <li class="list-inline-item"><small>Express.js</small></li>
+          <li class="list-inline-item"><small>MySQL</small></li>
+        </div>
       </div>
       <div class="ui-widget-content"></div>
-
-      <div class="header-text" id="header-text">
-
-        <h1>ILCHE SPASESKI</h1>
-        
-        <h1>Computer Science Student & Web Development Enthusiast</h1>
-        <div class="ui-widget-content"></div>
-        
-        <button class="btn email fa fa-envelope"> EMAIL</button>
-        <button class="btn github fa fa-github"> GITHUB</button>
-        <button class="btn linkedin fa fa-linkedin linkedin"> LINKEDIN</button>
-        
-      </div> -->
-
-
-    </section>
-    <div class="ui-widget-content"></div>
-
-    <div class="jumbotron jumbo" id="about">
-      <div class="about-me text-left">
-        <span class="mb-5 h2" id='app'>
-          ABOUT ME
-        </span>
-        <br />
-        <div class="about-content row ">
-          <div class='img-me col-lg-3 col-md-3 col-sm-3 col-xs-12'> <img src="img/me.jpg"
-              class="img-me img-fluid img-profile rounded-circle mx-auto mb-2" alt="Avatar" loading="lazy" />
+  
+      <div class="jumbotron education jumbo align-items-center" id='education'>
+        <div class="centered">
+          <div>
+            <h2 class="mb-5">EDUCATION</h2>
           </div>
-
-          <div class="about-text col-lg-8 col-md-8 col-sm-8 col-xs-12">
-            <p class="h2">
-              Hi, I'm Ilche Spaseski, a student at the Faculty of Computer
-              Science.
+          <div class="mb-6  ">
+            <div>
+              <h2 class="mb-6">Faculty of Computer Science and Engineering</h2>
+              <div class="mb-4">Bachelor of Science and Engineering</div>
+              <div class="text-left start-date ">October 2018 - Present</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="ui-widget-content"></div>
+  
+      <div class='jumbotron jumbo' id='interests'>
+        <div class='centered align-items-center'>
+          <div class="interests-header">
+            <h2 class='mb-5 '>INTERESTS</h2>
+          </div>
+          <div class='interests-text'>
+            <p>
+              When I'm not coding, you'll find me in my garage fixing something on my car or with my
+              friends on party.
+              Traveling and exploring new places are my passion, also a comedy movies are my best friends.
               <br>
-              I spend my days with my hands in many different areas of web development from back end programming to
-              front end engineering, user experience and visual design.
-              Love to learn new things such as a new programming languages and frameworks to improve my skills.
+              I spend a large amount of my free time exploring the latest technology advancements in phone and computer
+              industry.
+  
             </p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="ui-widget-content"></div>
-
-
-    <div class="jumbotron" id="skills">
-      <div class="skills-section">
-        <h2 class="mb-5">SKILLS</h2>
-
-        <br>
-        <br>
-        <div class='subheading'>Programming and Scripting Languages & Tools & Frameworks</div>
-        <i class="fa b fa-html5 fa-5x"></i>
-        <i class="fa fa-css3 fa-5x"></i>
-        <i class="fab fa-bootstrap fa-5x"></i>
-        <i class="fab fa-js-square fa-5x"></i>
-        <i class="fab fa-vuejs fa-5x"></i>
-        <i class="fab fa-npm fa-5x"></i>
-        <i class="fab fa-git fa-5x"></i>
-        <i class="fab fa-linux fa-5x"></i>
-        <li class="list-inline-item"><small>jQuery</small></li>
-        <li class="list-inline-item"><small>Express.js</small></li>
-        <li class="list-inline-item"><small>MySQL</small></li>
-      </div>
-    </div>
-    <div class="ui-widget-content"></div>
-
-    <div class="jumbotron education" id='education'>
-      <div class="centered">
-        <div>
-          <h2 class="mb-5">EDUCATION</h2>
-        </div>
-        <div class="mb-6  ">
-          <div>
-            <h2 class="mb-6">Faculty of Computer Science and Engineering</h2>
-            <div class="mb-4">Bachelor of Science and Engineering</div>
-            <div class="text-left start-date ">October 2018 - Present</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="ui-widget-content"></div>
-
-    <div class='jumbotron' id='interests'>
-      <div class='centered'>
-        <div class="interests-header">
-          <h2 class='mb-5 '>INTERESTS</h2>
-        </div>
-        <div class='interests-text'>
-          <p>
-            When I'm not coding, you'll find me in my garage fixing something on my car or with my
-            friends on party.
-            Traveling and exploring new places are my passion, also a comedy movies are my best friends.
-            <br>
-            I spend a large amount of my free time exploring the latest technology advancements in phone and computer
-            industry.
-
-          </p>
-        </div>
+  
       </div>
 
-    </div>
+      
+</div>
 
-
-  </div>
-
-  <script src="javascript.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</body>
 
 </html>
