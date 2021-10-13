@@ -1,84 +1,139 @@
-$yellow: #F9A826;
+
+$yellow: #f9a826;
 $head-font: "Yu Gothic UI";
 
-
 @mixin full-screen() {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-    position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  position: relative;
 }
 
-@mixin  pasus() {
-    text-align: justify;
-    color: #6c757d !important;
-    line-height: 1.5 !important;
-    font-family: 'Raleway', sans-serif;
+@mixin pasus() {
+  text-align: justify;
+  color: #6c757d !important;
+  line-height: 1.5 !important;
+  font-family: "Raleway", sans-serif;
 }
 
 @mixin naslov-section {
-        font-size: 45px !important;
-        color: #333333;
-        display: block;
-        font-weight: 700;
-        line-height: 1.2;
-        color: #343a40;
-        text-decoration: underline;
-      
-    
+  font-size: 45px !important;
+  color: #333333;
+  display: block;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  text-decoration: underline;
+}
+
+@mixin box-position {
+  border-radius: 2%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.50);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}  
+.navbar {
+  background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #304352, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+
+ .navbar-brand {
+  
+  color: white !important;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+  display:inline-block;
+  border-bottom:3px solid white;
+  padding-bottom:2px;
+ }
+.collapse {
+      ul {
+        li{
+          margin-left: 8px;
+          
+        }
+        li:hover {
+          border-radius: 5%;
+          display:inline-block;
+          border-bottom:3px solid white;
+          padding-bottom:2px;
+        }
+        a{
+          color:white !important;
+        }
+
+      }  
+}
+#about-me {
+  background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: transparent;
 }
 .main-section {
   @include full-screen();
-    
-        .header-text {
-            h1 {
-            font-size: 50px !important;
-            color: #333333 !important;
-            font-weight: bold;
-            }
-            h2 {
-                font-size: 25px !important; 
-                font-family: $head-font;
-            }
-        
-        }
-}
+  @include box-position();
+  .header-text {
+    h1 {
+      font-size: 50px !important;
+      color: white !important;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 25px !important;
+      font-family: $head-font;
+      color: white;
+    }
+  }
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: transparent;  
+
+  }
 .name {
-    color: $yellow;
-   font: $head-font;
+  color: $yellow;
+  font: $head-font;
 }
-.jumbotron {
-    margin: 0px !important;
-}
+
 .jumbo {
-   @include full-screen();
-  
-   background-color: white;
-   
-        .header-text>button a {
-            color: black;
-        }
-     
-        .about-content img {
-            width: 200px;
-            height: 210px;
-            border-radius: 50%;
-            border: 6px solid #42aac4;;
-        }
-       .img-me {
-           margin-left: 30px;
-       }
-        .about-text {
-            @include pasus();
-            margin-top: 15px;
-        }
-        
-        .about-text p {
-            font-weight: 300;
-            font-size: 22px;
-            padding-top: 20px;
-        
-        }
+  @include full-screen();
+  @include box-position();
+
+background: transparent;
+  .header-text > button a {
+    color: black;
+  }
+
+  .about-content img {
+    width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    border: 6px solid #42aac4;
+  }
+  .img-me {
+    margin-left: 30px;
+  }
+  .about-text {
+    @include pasus();
+  }
+
+  .about-text p {
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 20px;
+    color: white;
+  }
 }
 
 #skills {
@@ -100,19 +155,19 @@ $head-font: "Yu Gothic UI";
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 1rem !important;
-  color: #6c757d;
+  color: white;
   text-align: left;
   line-height: 1.5;
   font-weight: 700;
 }
 
-.skills-section>li {
+.skills-section > li {
   display: inline;
   font-size: 50px;
   margin-right: 30px;
 }
 
-.skills-section>i {
+.skills-section > i {
   margin-right: 30px !important;
   text-align: left;
 }
@@ -121,17 +176,15 @@ $head-font: "Yu Gothic UI";
   margin-bottom: 0;
 }
 
-
 .education {
   height: 100vh;
   position: relative;
-
 }
 .mb-4 {
   text-transform: uppercase;
-font-weight: 600;
-font-size: 18px;
-color: #6c757d;
+  font-weight: 600;
+  font-size: 18px;
+  color: #6c757d;
 }
 .centered {
   position: absolute;
@@ -141,7 +194,7 @@ color: #6c757d;
 .centered div:first-child {
   padding-bottom: 30px;
 }
-
+ 
 .start-date {
   font-size: 18px !important;
   margin-top: 10px !important;
@@ -151,25 +204,48 @@ color: #6c757d;
 }
 
 #interests {
- @include full-screen()
+  @include full-screen();
+  @include box-position();
+  background: transparent;
 }
 
-.interests-header{
-    padding-bottom: 50px;
-
+.interests-header {
+  padding-bottom: 50px;
 }
 .interests-text {
   padding-top: 20px;
   width: 80%;
   text-align: justify;
 }
-.interests-text p{
+.interests-text p {
   font-weight: 300;
   font-size: 22px;
-  color: #6c757d;
-  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-family: "Raleway", sans-serif;
 }
 
 .mb-5 {
-    @include naslov-section();
+  @include naslov-section();
+}
+@media screen and (max-width: 576px) {
+    .img-me {
+      text-align:center;
+    }
+    .about-text p {
+      font-size:16px !important;
+    }
+    .interests-header {
+      font-size: 22px !important;
+    }
+    .interests-text p { 
+      font-size: 16px !important;
+    }
+    .header-text {
+      font-size: 22px !important;
+    }
+
+}
+
+body {
+  position: relative;
 }

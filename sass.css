@@ -1,28 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #304352;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#d7d2cc), to(#304352));
+  background: linear-gradient(to top, #d7d2cc, #304352);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  background: #304352;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#304352), to(#304352));
+  background: linear-gradient(to top, #304352, #304352);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-brand {
+  color: white !important;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+}
+
+.collapse ul li {
+  margin-left: 8px;
+}
+
+.collapse ul li:hover {
+  border-radius: 5%;
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+}
+
+.collapse ul a {
+  color: white !important;
+}
+
+#about-me {
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#CFDEF3), to(#E0EAFC));
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: transparent;
+}
+
 .main-section {
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
   position: relative;
+  border-radius: 2%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2c3e50), to(#bdc3c7));
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: transparent;
 }
 
 .main-section .header-text h1 {
   font-size: 50px !important;
-  color: #333333 !important;
+  color: white !important;
   font-weight: bold;
 }
 
 .main-section .header-text h2 {
   font-size: 25px !important;
   font-family: "Yu Gothic UI";
+  color: white;
 }
 
 .name {
-  color: #F9A826;
+  color: #f9a826;
   font: "Yu Gothic UI";
-}
-
-.jumbotron {
-  margin: 0px !important;
 }
 
 .jumbo {
@@ -30,7 +95,13 @@
   margin-right: auto;
   height: 100vh;
   position: relative;
-  background-color: white;
+  border-radius: 2%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  background: transparent;
 }
 
 .jumbo .header-text > button a {
@@ -52,14 +123,14 @@
   text-align: justify;
   color: #6c757d !important;
   line-height: 1.5 !important;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 .jumbo .about-text p {
   font-weight: 300;
   font-size: 22px;
   padding-top: 20px;
+  color: white;
 }
 
 #skills {
@@ -81,7 +152,7 @@
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 1rem !important;
-  color: #6c757d;
+  color: white;
   text-align: left;
   line-height: 1.5;
   font-weight: 700;
@@ -138,6 +209,13 @@
   margin-right: auto;
   height: 100vh;
   position: relative;
+  border-radius: 2%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  background: transparent;
 }
 
 .interests-header {
@@ -153,8 +231,8 @@
 .interests-text p {
   font-weight: 300;
   font-size: 22px;
-  color: #6c757d;
-  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-family: "Raleway", sans-serif;
 }
 
 .mb-5 {
@@ -165,5 +243,27 @@
   line-height: 1.2;
   color: #343a40;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .img-me {
+    text-align: center;
+  }
+  .about-text p {
+    font-size: 16px !important;
+  }
+  .interests-header {
+    font-size: 22px !important;
+  }
+  .interests-text p {
+    font-size: 16px !important;
+  }
+  .header-text {
+    font-size: 22px !important;
+  }
+}
+
+body {
+  position: relative;
 }
 /*# sourceMappingURL=sass.css.map */
